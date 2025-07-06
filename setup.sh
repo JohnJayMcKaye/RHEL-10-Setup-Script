@@ -39,8 +39,9 @@ gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,close"
 echo "Lautstärke Booster für Lautsprecher aktivieren"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
 
+systemctl enable syncthing@$(whoami).service
+
 echo "----------------------------------------------------------------"
 echo "                 fertig, danke für deine Geduld                 "
-echo "                 bitte starte nun neu und führe                 "
-echo "                 das 2te script aus.                 "
+echo "                 bitte starte nun neu.          "
 echo "----------------------------------------------------------------"
