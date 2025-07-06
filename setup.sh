@@ -36,6 +36,9 @@ flatpak install -y --user fedora org.jpilot.JPilot
 echo "Füge Minimieren Knopf zur Fensterleiste hinzu"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,close"
 
+echo "Lautstärke Booster für Lautsprecher aktivieren"
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
+
 echo "----------------------------------------------------------------"
 echo "                 fertig, danke für deine Geduld                 "
 echo "                 bitte starte nun neu und führe                 "
