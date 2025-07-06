@@ -33,6 +33,8 @@ echo "Installiere ein paar Flatpaks für den Start"
 flatpak install -y --user flathub org.mozilla.firefox com.mattjakeman.ExtensionManager io.missioncenter.MissionCenter com.github.jeromerobert.pdfarranger com.github.junrrein.PDFSlicer com.github.tchx84.Flatseal com.rawtherapee.RawTherapee com.valvesoftware.Steam de.bund.ausweisapp.ausweisapp2 im.riot.Riot org.audacityteam.Audacity org.audacityteam.Audacity.Codecs org.blender.Blender org.blender.Blender.Codecs org.darktable.Darktable org.freecadweb.FreeCAD org.gimp.GIMP org.gnome.NetworkDisplays org.gnome.SimpleScan org.gnome.Snapshot org.gnome.SoundRecorder org.gnome.gThumb org.gpodder.gpodder org.inkscape.Inkscape org.kde.kdenlive org.kde.krita org.keepassxc.KeePassXC org.libreoffice.LibreOffice org.mozilla.Thunderbird org.videolan.VLC
 flatpak install -y --user fedora org.jpilot.JPilot
 
+echo "Füge Minimieren Knopf zur Fensterleiste hinzu"
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,close"
 
 echo "----------------------------------------------------------------"
 echo "                 fertig, danke für deine Geduld                 "
